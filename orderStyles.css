@@ -1,0 +1,77 @@
+*{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body{
+    overflow-x: hidden;
+ }
+ .order-sec{
+   background-color: #d8f3dc;
+ }
+
+ /*nav hover style*/
+ .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #2dc653;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2dc653;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+ 
+  .navCol{
+   background:transparent;
+   backdrop-filter: blur(10px);
+  }
+   
+  /*nav hover style ends*/
+
+
+  .ord-name::first-letter{
+    font-size: 20px;
+    color: green;
+  }
+  .ord-name{
+    font-size: 18px;
+  }
+  .ord-title::first-letter{
+     font-size: 35px;
+     color: green;
+  }
+  .ord-title{
+    border-bottom: 4px solid green;
+  }
+
+
+  .order-title{
+    text-shadow: 2px 2px 6px #000;
+    font-weight: 600;
+    font-size: large;
+  }
+  .img-box:hover img{
+  	transform: scale(1.2); 
+}
+.img-box img{
+  transition: all 1.3s ease;
+}
+.img-box {
+  overflow: hidden;
+}
